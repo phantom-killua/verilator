@@ -322,7 +322,8 @@ private:
     int         m_compLimitBlocks;  // compiler selection; number of nested blocks
     int         m_compLimitMembers;  // compiler selection; number of members in struct before make anon array
     int         m_compLimitParens;  // compiler selection; number of nested parens
-
+    int 		m_detectArrayMaxIndexes; // main switch: --detect-array-max-indexes
+    
     string      m_bin;          // main switch: --bin {binary}
     string      m_exeName;      // main switch: -o {name}
     string      m_flags;        // main switch: -f {name}
@@ -522,6 +523,7 @@ public:
     int compLimitBlocks() const { return m_compLimitBlocks; }
     int compLimitMembers() const { return m_compLimitMembers; }
     int compLimitParens() const { return m_compLimitParens; }
+    int detectArrayMaxIndexes() const { return m_detectArrayMaxIndexes; }
 
     string exeName() const { return m_exeName != "" ? m_exeName : prefix(); }
     string l2Name() const { return m_l2Name; }
