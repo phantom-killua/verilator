@@ -322,7 +322,7 @@ private:
     int         m_compLimitBlocks;  // compiler selection; number of nested blocks
     int         m_compLimitMembers;  // compiler selection; number of members in struct before make anon array
     int         m_compLimitParens;  // compiler selection; number of nested parens
-    int 		m_detectArrayMaxIndexes; // main switch: --detect-array-max-indexes
+    int         m_detectArrayMaxIndexes; // main switch: --detect-array-max-indexes
     
     string      m_bin;          // main switch: --bin {binary}
     string      m_exeName;      // main switch: -o {name}
